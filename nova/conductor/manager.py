@@ -944,7 +944,7 @@ class ComputeTaskManager(base.Base):
                     # NOTE(sbauza): Force_hosts/nodes needs to be reset
                     # if we want to make sure that the next destination
                     # is not forced to be the original host
-                    #change_wyc
+                    #change wyc
                     if ':' in request_spec.availability_zone:
                         _host=request_spec.availability_zone.split(':')[1]
                         availability_zone=request_spec.availability_zone.split(':')[0]
@@ -986,7 +986,7 @@ class ComputeTaskManager(base.Base):
                     scheduler_utils.populate_filter_properties(
                             filter_properties, selection)
                     (host, node) = (selection.service_host, selection.nodename)
-                    #change_wyc
+                    #change wyc
                     if _host:
                         host=_host
                         node=host

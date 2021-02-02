@@ -35,3 +35,10 @@ unshelve_v277 = {
     'required': ['unshelve'],
     'additionalProperties': False,
 }
+# change wyc
+import copy
+unshelve_v277 = copy.deepcopy(unshelve_v277)
+unshelve_v277['properties']['unshelve'][
+            'properties']['host'] = parameter_types.hostname
+unshelve_v277['properties']['unshelve'][
+            'properties']['hypervisor_hostname'] = parameter_types.hostname
